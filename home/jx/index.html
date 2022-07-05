@@ -53,7 +53,19 @@
         onBridgeReady();
     }
 </script>
-
+<style>
+    .hans-container {
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 50px;
+        -moz-transform: scaleY(-1);
+        -webkit-transform: scaleY(-1);
+        -o-transform: scaleY(-1);
+        transform: scaleY(-1); /*兼容IE*/
+        filter: FlipV;
+    }
+</style>
 <div id="hans-bolang"></div>
 <script src="https://api.vvhan.com/api/bolang"></script>
 <script>
