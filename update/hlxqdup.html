@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>葫芦侠一键签到更新检查</title>
+</head>
+<body>
+<pre id="json"></pre>
+</body>
+<script type="text/javascript">
+    let btn = document.querySelector('#json');
+    let data =
+        {
+            "cancelable": false, //可取消的更新
+            "versionCode": 5,   //服务端的版本号
+            "versionName": "1.5", //服务端的版本名
+            "updateLog": "- 优化签到速度及_key记录；\n- 优化常见问题及使用教程；\n- 新增软件主界面智能提醒；", //更新内容
+            "web1Url": "https://www.123pan.com/s/CPO7Vv-WR9r3.html",//浏览器下载APK的网址
+            "web2Url": "https://www.123pan.com/s/CPO7Vv-WR9r3.html",//其它下载网址
+            "apkSize": "4.32MB", //新版本的大小
+            "qKey": "CqPNIo6vkORF1-Lp8svZwrC7GQP8SuVn",  //QQ群key
+            "hintText": "后续有问题会在此弹窗及时提醒哦！",  //智能弹窗提示
+            "showUrlBtn": false, //显示url按钮
+            "hintUrl": "https://www.baidu.com" //url按钮内容
+        };
+    btn.textContent = JSON.stringify(data, null, 2);
+</script>
+</html>
